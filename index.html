@@ -36,16 +36,16 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="min-vh-100 d-flex align-items-center">
+    <section class="d-flex align-items-center hero-section">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h1 class="display-3 mb-4">Maria Eugênia | IGNIS Arte</h1>
-            <p class="lead mb-4">Artista Visual | Arte Educadora</p>
-            <p class="mb-5">Ignis significa fogo em latim</p>
+            <h1 class="display-3 mb-4 hero-title">Maria Eugênia | IGNIS Arte</h1>
+            <p class="lead mb-4 hero-text">Artista Visual | Arte Educadora</p>
+            <p class="mb-5 hero-text">Ignis significa fogo em latim</p>
           <div>
-            <a href="#" class="btn btn-dark btn-lg me-3 mb-2">Ver Catálogo</a>
-            <a href="#" class="btn btn-dark btn-lg mb-2">Entrar em Contato</a>
+            <a href="#" class="btn btn-lg me-3 mb-2 button-primary">Ver Catálogo</a>
+            <a href="#" class="btn btn-lg mb-2 button-secondary">Entrar em Contato</a>
           </div>
           </div>
         </div>
@@ -53,22 +53,21 @@
     </section>
 
     <!-- About Section -->
-    <section class="py-4">
+    <section class="py-4 about-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-3 mb-lg-0">
             <img src="./assets/foto_maria.jpg"
-                alt="Maria Eugênia - IGNIS"
-                class="img-fluid rounded shadow-lg">
+                alt="Maria Eugênia - IGNIS">
           </div>
           <div class="col-lg-6 ps-lg-5">
-            <h2 class="h3 mb-3 mt-5">Sobre a Artista</h2>
-            <p class="lead mb-3">Arte transforma.</p>
-            <p class="mb-3">
+            <h2 class="h3 mb-3 title-text">Sobre a Artista</h2>
+            <p class="lead mb-3 subtitle-text">Arte transforma.</p>
+            <p class="mb-3 body-text">
               Ignis, nome artístico da artista visual Maria Eugênia, combina arte e o conceito sensorial,
               criando laços com a comunidade através das cores vivas com retratações de figuras do imaginário regional.
             </p>
-            <p class="mb-4">
+            <p class="mb-4 body-text">
               Usando tinta a óleo como a principal forma de desenvolver memórias infantis e sentimentos do cotidiano nordestino através de matizes fortes,
               que reflete o ecossistema do subúrbio nordestino como protagonismo das suas artes. Usa tons e figuras humanas fortes,
               desenvolvendo a ancestralidade nordestina como meio artísticos de expressão.
@@ -79,55 +78,64 @@
     </section>
 
     <!-- Featured Works Section -->
-    <section class="py-5">
+    <section class="py-5 works-section">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="h3 mb-3">Obras em Destaque</h2>
-          <p class="text-muted mb-0">Uma seleção das criações mais recentes</p>
+          <h2 class="h3 mb-3 title-text">Obras em Destaque</h2>
+          <p class="mb-0 subtitle-text">Uma seleção das criações mais recentes</p>
         </div>
 
         <div class="row g-4 justify-content-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card border-0 bg-dark text-white">
-              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=700&fit=crop"
-                  class="card-img" alt="Série Manufatura">
-              <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Série: Manufatura</p>
-                <a href="" class="btn btn-sm btn-outline-light mt-2">Ver Mais</a>
+            <div class="work-card">
+              <div class="work-image">
+                <img src="./assets/rezar.jpg"
+                     alt="Quadro 'Rezar', da série Manufatura"
+                     class="img-fluid">
+                <div class="work-overlay">
+                  <h4>Rezar</h4>
+                  <p>Série: Manufatura</p>
+                  <a href="catalogo.html" class="btn btn-sm btn-outline-light mt-2">Ver Mais</a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card border-0 bg-dark text-white">
-              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=700&fit=crop"
-                  class="card-img" alt="En Colores">
-              <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Série: En Colores</p>
-                <a href="" class="btn btn-sm btn-outline-light mt-2">Ver Mais</a>
+            <div class="work-card">
+              <div class="work-image">
+                <img src="./assets/janaina.jpg"
+                     alt="Quadro 'Janaína', da série En Colores"
+                     class="img-fluid">
+                <div class="work-overlay">
+                  <h4>Janaína</h4>
+                  <p>Série: En Colores</p>
+                  <a href="catalogo.html" class="btn btn-sm btn-outline-light mt-2">Ver Mais</a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card border-0 bg-dark text-white">
-              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=700&fit=crop"
-                  class="card-img" alt="Subúrbio Nordestino">
-              <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Série: Subúrbio Nordestino</p>
-                <a href="" class="btn btn-sm btn-outline-light mt-2">Ver Mais</a>
+            <div class="work-card">
+              <div class="work-image">
+                <img src="./assets/a_brasileira.jpg"
+                     alt="Quadro 'A Brasileira', da série Subúrbio Nordestino"
+                     class="img-fluid">
+                <div class="work-overlay">
+                  <h4>A Brasileira</h4>
+                  <p>Série: Subúrbio Nordestino</p>
+                  <a href="catalogo.html" class="btn btn-sm btn-outline-light mt-2">Ver Mais</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="text-center mt-5">
-          <a href="" class="btn btn-lg btn-dark">
-            Ver Catálogo Completo
-          </a>
+          <div class="text-center mt-5">
+            <a href="" class="btn btn-lg btn-dark">
+              Ver Catálogo Completo
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -185,27 +193,25 @@
       </div>
     </footer> -->
 
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3"">
-        <div class="col-md-4 d-flex align-items-center">
-          <div class="d-flex gap-2">
-              <a href="https://www.instagram.com/ignis.artes/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="mailto:contato.ignisartes@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
-              <a href="https://wa.me/5586999186723" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          <div class="ms-3 mb-md-0">
-            <span>IGNIS Arte</span>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3"">
+      <div class="col-md-4 d-flex align-items-center">
+        <div class="d-flex gap-2">
+            <a href="https://www.instagram.com/ignis.artes/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contato.ignisartes@gmail.com" class="social-link" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/5586999186723" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
+        <div class="ms-3 mb-md-0">
+          <span>IGNIS Arte</span>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3 mt-md-1 mt-3">
-            <div>
-              <span class="me-2">© 2025 Ignis Arte. Todos os direitos reservados</span>
-            </div>
-          </li>
-        </ul>
-      </footer>
-    </div>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3 mt-md-1 mt-3">
+          <div>
+            <span class="me-2">© 2025 Ignis Arte. Todos os direitos reservados</span>
+          </div>
+        </li>
+      </ul>
+    </footer>
   </main>
 
   <script src="./js/script.js"></script>
