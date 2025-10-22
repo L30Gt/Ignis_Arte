@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - IGNIS Arte</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+	<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-inline-flex align-items-center gap-3" href="./index.html">
+        <img src="./assets/logo.png" alt="IGNIS Arte" width="30" height="24">
+        <span>IGNIS Arte</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="./portfolio.html">Catálogo</a>
+          <a class="nav-link" href="#">Encomendas</a>
+          <a class="nav-link" href="#">Aulas</a>
+          <a class="nav-link" href="#">Contato</a>
+        </div>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+	<main>
+		<section class="d-flex align-items-center hero-section catalog-hero">
+			<div class="container text-center">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center text-center">
+						<h1 class="display-3 mb-4 hero-title">IGNIS Arte</h1>
+						<p class="mb-5 catalog-hero-text">Ignis significa fogo em latim</p>
+					</div>
+
+					<div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
+						<img src="./assets/catalogo.jpg" alt="Ignis com uma de suas obras" class="img-hero" style="width: 500px;">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Catalog Section -->
+		<section class="container px-0 py-5">
+			<div class="row g-0">
+				<div class="col-12 col-md-6 px-0 w-25 catalog-left">
+					<div class="p-3 px-4 h-100 d-flex">
+						<div class="sticky-title">
+							<h2 class="catalog-title m-0">Catálogo</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 px-0 w-75">
+					<div class="p-3 px-4 h-100 d-flex align-items-top">
+						<!-- 2x2 grid -->
+						<div class="container">
+							<div class="row row-cols-1 row-cols-sm-2 g-4">
+								<div class="col text-center">
+									<a href="">
+										<img src="./assets/portfolio_manufatura.png" alt="Manufatura" class="img-fluid w-100 rounded" style="height:500px; object-fit:contain;">
+										<h5 class="mt-2 mb-1 pt-2">Manufatura</h5>
+										<p class="text-muted mb-0">2025</p>
+									</a>
+								</div>
+								<div class="col text-center">
+									<a href="">
+										<img src="./assets/portfolio_encolores.jpg" alt="En Colores" class="img-fluid w-100 rounded" style="height:500px; object-fit:contain;">
+										<h5 class="mt-2 mb-1 pt-2">En Colores</h5>
+										<p class="text-muted mb-0">2025</p>
+									</a>
+								</div>
+								<div class="col text-center">
+									<a href="">
+										<img src="./assets/portfolio_suburbionordestino.jpg" alt="Subúrbio Nordestino" class="img-fluid w-100 rounded" style="height:500px; object-fit:contain;">
+										<h5 class="mt-2 mb-1 pt-2">Subúrbio Nordestino</h5>
+										<p class="text-muted mb-0">2025</p>
+									</a>
+								</div>
+								<!-- empty slot -->
+								<div class="col d-none d-sm-block"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<article class="py-5 px-5 border-top">
+			<div class="row g-0 h-100 px-5 align-items-center">
+				<div class="col-12 col-md-6 px-0 h-100 d-flex flex-column align-items-center">
+					<div class="p-5">
+						<p class="mb-2">Entre em contato para mais informações sobre as obras disponíveis.</p>
+						<a href="" class="btn btn-sm btn-outline-danger mt-1 align-self-md-start">Contato</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 px-0 h-100">
+					<img src="./assets/banner.jpg" width="500" height="300" style="justify-content: center; display: block; margin: 0 auto;">
+				</div>
+			</div>
+		</article>
+
+		<!-- Orders Section -->
+		<section class="py-5 border-bottom border-top" >
+			<h1 style="text-align: center;">Encomendas</h1>
+			<p style="text-align: center;">Deixe a arte queimar em você!</p>
+
+			<div class="container p-3">
+				<div class="row g-4">
+					<div class="col-12 col-md-4 text-center">
+						<img src="assets/pintura.jpg" alt="obra 1" class="img-fluid rounded">
+						<a href="#" class="d-block mt-2">Pintura e Técnicas mistas em tela</a>
+					</div>
+					<div class="col-12 col-md-4 text-center">
+						<img src="assets/pintura_digital.png" alt="obra 2" class="img-fluid rounded">
+						<a href="#" class="d-block mt-2">Pintura e Desenho digital</a>
+					</div>
+					<div class="col-12 col-md-4 text-center">
+						<img src="assets/pintura_aquarela.jpg" alt="obra 3" class="img-fluid rounded">
+						<a href="#" class="d-block mt-2">Pintura em Aquarela e Técnicas mistas</a>
+					</div>
+				</div>
+			</div>
+
+			<article class="container py-4">
+				<ol>
+					<li>Escolha a técnica de acordo com seu interesse;</li>
+					<li>Escolha referências que simulem a sua arte (cores, personas, etc...);</li>
+					<li>Mande uma mensagem (junto com as referências) desenvolvendo especificamente o significado, a intenção e sensações que gostaria de transmitir com sua nova arte;</li>
+					<li>Solicite seu orçamento <a href="">aqui</a> :)</li>
+				</ol>
+
+				<div class="text-center">
+					<div class="bg-secondary p-4 rounded-4 d-inline-flex align-items-center gap-3">
+						<i class="fas fa-paint-brush"></i>
+						<span>Lembre-se que tudo pode ser uma referência :)</span>
+					</div>
+				</div>
+			</article>
+
+		</section>
+
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+      <div class="col-md-4 d-flex align-items-center">
+        <div class="d-flex gap-2">
+            <a href="https://www.instagram.com/ignis.artes/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contato.ignisartes@gmail.com" class="social-link" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/5586999186723" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        <div class="ms-3 mb-md-0">
+          <span>IGNIS Arte</span>
+        </div>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3 mt-md-1 mt-3">
+          <div>
+            <span class="me-2">© 2025 Ignis Arte. Todos os direitos reservados</span>
+          </div>
+        </li>
+      </ul>
+    </footer>
+	</main>
+</body>
+</html>

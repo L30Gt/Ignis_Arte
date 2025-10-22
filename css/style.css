@@ -254,6 +254,34 @@ footer .social-link:focus {
     margin-bottom: 0.5rem;
 }
 
+/* Catalog Page */
+.catalog-hero {
+	min-height: 55vh;
+}
+
+/* TODO: Ajustar quadro da imagem */
+
+.img-hero {
+	width: 70%;
+	height: auto;
+	object-fit: cover;
+}
+
+.catalog-hero-text {
+	color: var(--text-beige);
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+/* Teste na catalog Hero */
+.catalog-left { position: relative; } /* garante limite do sticky */
+.catalog-left .sticky-title {
+  position: sticky;
+  top: 3rem;            /* distância do topo da viewport enquanto "gruda" */
+  align-self: flex-start;
+}
+
 
 
 @media (max-width: 991.98px) {
