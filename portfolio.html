@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="./portfolio.html">Catálogo</a>
-          <a class="nav-link" href="#">Encomendas</a>
+          <a class="nav-link" href="./portfolio.html#encomendas">Encomendas</a>
           <a class="nav-link" href="#">Aulas</a>
           <a class="nav-link" href="#">Contato</a>
         </div>
@@ -44,7 +44,7 @@
 					</div>
 
 					<div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-						<img src="./assets/catalogo.jpg" alt="Ignis com uma de suas obras" class="img-hero" style="width: 500px;">
+						<img src="./assets/catalogo.jpg" alt="Ignis com alguma de suas obras" class="img-hero" style="width: 500px;">
 					</div>
 				</div>
 			</div>
@@ -66,21 +66,21 @@
 						<div class="container">
 							<div class="row row-cols-1 row-cols-sm-2 g-4">
 								<div class="col text-center">
-									<a href="">
+									<a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
 										<img src="./assets/portfolio_manufatura.png" alt="Manufatura" class="img-fluid w-100 rounded" style="height:500px; object-fit:contain;">
 										<h5 class="mt-2 mb-1 pt-2">Manufatura</h5>
 										<p class="text-muted mb-0">2025</p>
 									</a>
 								</div>
 								<div class="col text-center">
-									<a href="">
+									<a href="" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
 										<img src="./assets/portfolio_encolores.jpg" alt="En Colores" class="img-fluid w-100 rounded" style="height:500px; object-fit:contain;">
 										<h5 class="mt-2 mb-1 pt-2">En Colores</h5>
 										<p class="text-muted mb-0">2025</p>
 									</a>
 								</div>
 								<div class="col text-center">
-									<a href="">
+									<a href="" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
 										<img src="./assets/portfolio_suburbionordestino.jpg" alt="Subúrbio Nordestino" class="img-fluid w-100 rounded" style="height:500px; object-fit:contain;">
 										<h5 class="mt-2 mb-1 pt-2">Subúrbio Nordestino</h5>
 										<p class="text-muted mb-0">2025</p>
@@ -98,20 +98,20 @@
 		<!-- Contact Section -->
 		<article class="py-5 px-5 border-top">
 			<div class="row g-0 h-100 px-5 align-items-center">
-				<div class="col-12 col-md-6 px-0 h-100 d-flex flex-column align-items-center">
-					<div class="p-5">
+				<div class="col-12 col-md-6 px-0 h-100 d-flex flex-column align-items-center order-2 order-md-1 text=text-center">
+					<div class="pt-5 p-md-5">
 						<p class="mb-2">Entre em contato para mais informações sobre as obras disponíveis.</p>
 						<a href="" class="btn btn-sm btn-outline-danger mt-1 align-self-md-start">Contato</a>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 px-0 h-100">
-					<img src="./assets/banner.jpg" width="500" height="300" style="justify-content: center; display: block; margin: 0 auto;">
+				<div class="col-12 col-md-6 px-0 h-100 d-flex justify-content-center order-1 order-md-2">
+					<img src="./assets/banner.jpg" class="d-block img-fluid mx-auto justify-content-center" style="max-width: 500px; height: auto;">
 				</div>
 			</div>
 		</article>
 
 		<!-- Orders Section -->
-		<section class="py-5 border-bottom border-top" >
+		<section class="py-5 border-bottom border-top" id="encomendas">
 			<h1 style="text-align: center;">Encomendas</h1>
 			<p style="text-align: center;">Deixe a arte queimar em você!</p>
 
@@ -169,6 +169,95 @@
         </li>
       </ul>
     </footer>
+
+		<!-- Modal Gallery -->
+		<aside class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+				</div>
+				<div class="modal-body row g-0">
+					<div class="col-12 col-md-6 w-75 bg-dark">
+						<div id="obraCarousel" class="carousel slide py-5" data-bs-ride="false">
+							<div class="carousel-inner">
+								<div class="carousel-item active"
+										data-title="Rezar"
+										data-subtitle="Manufatura"
+										data-year="2025"
+										data-desc="Rezar é a maneira que reconhecer a dificuldade da luta diária, através da contagem de sementes ou pedras acopladas em um cordão, dividido e minuciosamente contato e marcando nossas preces."
+										data-specs-tech="Técnica mista sob tela preparada"
+										data-specs-size="25 × 25cm"
+										data-specs-price="R$ 360,00">
+									<img src="./assets/rezar.jpg" class="d-block w-100" alt="Obra Rezar da série 'Manufatura'" style="object-fit:contain; max-height:80vh;">
+								</div>
+
+								<div class="carousel-item"
+										data-title="Trançar"
+										data-subtitle="Manufatura"
+										data-year="2025"
+										data-desc="Primeira tela pintada da série, e abraça a ancestralidade na  representação de tornar vários fios em um só. Trançar é uma técnica que floresce nos cabelos, no cotidiano e no cuidado. Mover fios tornando em um mais forte."
+										data-specs-tech="Tinta acrílica sob tela preparada"
+										data-specs-size="30 × 40cm"
+										data-specs-price="R$ 620,00">
+									<img src="./assets/manufatura_trancar.jpg" class="d-block w-100" alt="Obra Trançar da série 'Manufatura'" style="object-fit:contain; max-height:80vh;">
+								</div>
+
+								<div class="carousel-item"
+										data-title="Cestaria"
+										data-subtitle="Manufatura"
+										data-year="2025"
+										data-desc="Desenvolver habilidades manuais que cruzam a ancestralidade do saber, do fazer para tecnologia diária ou 'utensílios', uma sabedoria de povos originários de criar malhas cruzando folhas de palmeiras secas."
+										data-specs-tech="Tinta óleo sob tela preparada"
+										data-specs-size="30 × 40cm"
+										data-specs-price="R$ 880,00">
+									<img src="./assets/manufatura_cestaria.png" class="d-block w-100" alt="Obra Cestaria da série 'Manufatura'" style="object-fit:contain; max-height:80vh;">
+								</div>
+							</div>
+
+							<button class="carousel-control-prev" type="button" data-bs-target="#obraCarousel" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Anterior</span>
+							</button>
+
+							<button class="carousel-control-next" type="button" data-bs-target="#obraCarousel" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Próximo</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-5 w-25">
+						<article class="p-4 h-100 d-flex flex-column justify-content-start">
+							<header>
+								<h2 id="obraModalTitle" class="mb-1"></h2>
+								<h4 id="obraModalSubtitle" class="mb-1"></h4>
+								<p id="obraModalYear" class="text-muted mb-3"></p>
+							</header>
+
+							<section class="py-4 border-bottom border-top mb-3">
+								<a id="obraModalAction" href="#" class="btn btn-primary">Adquirir</a>
+							</section>
+
+							<section class="mb-3 pt-3">
+								<p id="obraModalDesc" class="p-0"></p>
+							</section>
+
+							<section class="text-muted p-0">
+								<p id="obraModalSpecsTech" class="mb-1"></p>
+								<p id="obraModalSpecsSize" class="mb-1"></p>
+								<p id="obraModalSpecsPrice" class="mb-1"></p>
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+
 	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 </html>
